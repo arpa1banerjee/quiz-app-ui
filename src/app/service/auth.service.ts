@@ -1,14 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+
+  private loggedInSubject = new Subject<boolean>();
   constructor(
     private http: HttpClient
   ) { }
+  logInSubject(data: boolean) {
+    this.loggedInSubject.next(data);
+  }
+  getIsLoggedIn(): Observable<boolean> {
+    return this.loggedInSubject.asObservable();
+  }
   login(data: any): Observable<any> {
     return this.http.get('./assets/mock-data/login.json');
   }
@@ -25,7 +33,7 @@ export class AuthService {
   resetPassWord(data: any): Observable<any> {
     return this.http.get('./assets/mock-data/reset-pwd.json');
   }
-  public isLoggedIn(): boolean {
-    return !localStorage.getItem('user') === null;
+  isLoggedIn(): boolean {
+    return localStorage.getItem('user') !== null;
   }
 }

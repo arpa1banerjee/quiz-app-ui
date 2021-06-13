@@ -36,6 +36,7 @@ export class SignInComponent implements OnInit {
           name: resp.name
         }
         this.auth.setLocalStorage(user);
+        this.auth.logInSubject(true);
         this.router.navigateByUrl('/app');
       }
     })

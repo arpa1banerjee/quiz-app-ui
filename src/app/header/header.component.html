@@ -1,5 +1,19 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>{{title | uppercase}}</span>
+      <span class="spacer"></span>
+      <button mat-icon-button *ngIf="isLoggedIn" [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>verified_user</mat-icon>
+          <span>Arpa</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
     </mat-toolbar-row>
 </mat-toolbar>

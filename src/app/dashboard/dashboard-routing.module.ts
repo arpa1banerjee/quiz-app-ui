@@ -1,11 +1,13 @@
 import { BodyComponent } from './body/body.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from '../util/auth.guard';
 
 const routes: Routes = [
     {
         path: '',
-        component: BodyComponent
+        component: BodyComponent,
+        canActivate: [AuthGuard]
     }
 ];
 
