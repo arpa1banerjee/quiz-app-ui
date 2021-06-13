@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     AuthRoutingModule,
     FormsModule, 
     ReactiveFormsModule,
+    HttpClientModule,
     FlexLayoutModule,
     MatCardModule,
     MatFormFieldModule,

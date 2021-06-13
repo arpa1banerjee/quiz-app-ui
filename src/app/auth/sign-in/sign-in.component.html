@@ -1,4 +1,4 @@
-<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+<div fxLayout="row" fxLayoutAlign="center center">
     <mat-card class="login-box">
       <mat-card-header fxLayoutAlign="center center">
         <mat-card-title>Log in</mat-card-title>
@@ -24,7 +24,7 @@
         <div fxLayout="column">
             <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Log in</button>
             <p class="member-text">Not a member yet?</p>
-            <button mat-raised-button color="primary" type="button" routerLink="/auth/signup">Register here!</button>
+            <button mat-stroked-button color="primary" type="button" routerLink="/auth/signup">Register here!</button>
         </div>
       </form>
     </mat-card>
