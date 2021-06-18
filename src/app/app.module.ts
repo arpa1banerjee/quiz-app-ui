@@ -1,3 +1,4 @@
+import { ProfileModule } from './profile/profile.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -30,6 +31,7 @@ import { HeaderComponent } from './header/header.component';
     BrowserAnimationsModule,
     LandingModule,
     AuthModule,
+    ProfileModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
