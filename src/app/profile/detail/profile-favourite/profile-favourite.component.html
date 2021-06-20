@@ -1,0 +1,8 @@
+<mat-list role="list">
+    <mat-list-item *ngFor="let item of favouriteQuizzes" class="fav-list-item">
+        <img mat-list-icon [src]="item.img" [alt]="item.category"/>
+        <div mat-line class="mat-title">{{item.subCategory}}<span class="grey"> ({{item.category}})</span></div>
+        <div mat-line class="mat-card-subtitle">Played <strong class="bold">{{item.played}}</strong> times</div>
+        <div mat-line class="mat-card-subtitle">Highest Score: <strong class="bold">{{item.maxScore}}</strong></div>
+    </mat-list-item>
+</mat-list>

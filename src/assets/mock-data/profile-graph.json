@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Arpa",
+      "series": [
+        {
+          "name": "Sun",
+          "value": 0
+        },
+        {
+          "name": "Mon",
+          "value": 5
+        },
+        {
+          "name": "Tue",
+          "value": 15
+        },
+        {
+          "name": "Wed",
+          "value": 8
+        },
+        {
+          "name": "Thurs",
+          "value": 20
+        },
+        {
+          "name": "Fri",
+          "value": 28
+        },
+        {
+          "name": "Sat",
+          "value": 0
+        }
+      ]
+    }
+]

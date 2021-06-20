@@ -1,36 +1,14 @@
 <div class="profile-summary">
-    <div class="profile-summary-header" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
-        <div fxLayout="column" fxFlex="0 1 calc(33.3% -20px)" fxLayoutAlign="center center" class="level">
-            <h2>Lv.4</h2>
-            <h4>Expert Level</h4>
-        </div>
-        <div fxFlex="0 1 calc(33% -20px)" fxLayoutAlign="center center">
-            <img src="../../../assets/img/profile.jpg" alt="profile"  class="profile-img" />
-        </div>
-        <div fxLayout="column" fxFlex="0 1 calc(33.3% -20px)" fxLayoutAlign="center center" class="rank">
-            <h2>22</h2>
-            <h4>World Rank</h4>
-        </div>
-    </div>
-    <div class="graph">
-        <ngx-charts-line-chart
-            [scheme]="colorScheme"
-            [legend]="legend"
-            [legendPosition]="legendPosition"
-            [showXAxisLabel]="showXAxisLabel"
-            [showYAxisLabel]="showYAxisLabel"
-            [xAxis]="xAxis"
-            [yAxis]="yAxis"
-            [xAxisLabel]="xAxisLabel"
-            [yAxisLabel]="yAxisLabel"
-            [timeline]="timeline"
-            [results]="multi"
-            (select)="onSelect($event)"
-            (activate)="onActivate($event)"
-            (deactivate)="onDeactivate($event)"
-            [showGridLines]=true>
-        </ngx-charts-line-chart>
-    </div>
+    <app-profile-header></app-profile-header>
+    <app-profile-graph></app-profile-graph>
+    <mat-tab-group mat-align-tabs="center" color="primary" mat-stretch-tabs dynamicHeight>
+        <mat-tab label="Trending">
+            <app-profile-trending></app-profile-trending>
+        </mat-tab>
+        <mat-tab label="My Favorites">
+            <app-profile-favourite></app-profile-favourite>
+        </mat-tab>
+    </mat-tab-group>
 </div>
 
     

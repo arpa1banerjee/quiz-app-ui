@@ -1,0 +1,20 @@
+.list-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.bold {
+    color: black;
+}
+::ng-deep .mat-list-icon {
+    width: 50px !important;
+    height: 50px !important;
+}
+.grey {
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+}
+.fav-list-item:hover {
+    cursor: pointer;
+    background-color: rgba(223, 219, 219, 0.54);
+}

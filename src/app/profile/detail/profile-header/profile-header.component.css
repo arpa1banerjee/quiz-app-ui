@@ -1,0 +1,16 @@
+.profile-summary-header {
+    background: #3f51b5;
+    border-top: 2px solid rgb(189, 185, 185);
+    padding: 10px 0;
+}
+.profile-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.level, .rank {
+    color: white;
+}
+h2, h4 {
+    margin: 0;
+}

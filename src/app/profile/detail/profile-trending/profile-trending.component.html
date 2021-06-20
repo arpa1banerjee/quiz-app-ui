@@ -1,0 +1,28 @@
+<div fxLayout.sm="row wrap" fxLayout.xs="column" 
+    fxLayout.md="row wrap" fxLayout.lg="row wrap" 
+    fxLayoutAlign="start" fxLayoutGap="20px">
+    <div *ngFor="let item of trendingItem">
+        <mat-card class="trending-card">
+            <mat-card-header>
+            <div mat-card-avatar class="trending-card-header-image" 
+                [style.background-image]="'url('+item.categoryImg+')'"></div>
+            <mat-card-title [matBadge]="item.count" matBadgeOverlap="false" matBadgeColor="warn">{{item.category}}</mat-card-title>
+            <mat-card-subtitle>{{item.subCategory}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="item.img" [alt]="item.subCategory">
+            <mat-card-content>
+            <p>
+                {{item.text}}
+            </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-icon-button color="primary">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+                <button mat-icon-button color="primary">
+                    <mat-icon>open_in_new</mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

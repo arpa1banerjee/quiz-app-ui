@@ -1,0 +1,11 @@
+.trending-card {
+    max-width: 250px;
+}
+.trending-card-header-image {
+    background-size: cover;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .trending-card {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "category" : "Sports",
+        "subCategory" : "Football",
+        "count" : 60,
+        "categoryImg" : "../../../../assets/img/sports.png",
+        "img" : "../../../../assets/img/football.jpeg",
+        "text" : "Do you know which country won the first world cup? Play this category for much more interesting questions.."
+    },
+    {
+        "category" : "Movies",
+        "subCategory" : "Hollywood",
+        "count" : 12,
+        "categoryImg" : "../../../../assets/img/movies.jpeg",
+        "img" : "../../../../assets/img/hollywood.jpeg",
+        "text" : "Do you know which hollywood movie won oscar for best picture category in 2010? Play this category for much more interesting questions.."
+    }
+]

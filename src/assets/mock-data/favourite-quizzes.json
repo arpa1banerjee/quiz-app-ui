@@ -1,0 +1,23 @@
+[
+    {
+        "category" : "Sports",
+        "subCategory" : "Cricket",
+        "played" : 12,
+        "maxScore" : "20/30",
+        "img" : "../../../../assets/img/cricket.jpeg"
+    },
+    {
+        "category" : "Sports",
+        "subCategory" : "Football",
+        "played" : 18,
+        "maxScore" : "22/30",
+        "img" : "../../../../assets/img/football.jpeg"
+    },
+    {
+        "category" : "Geography",
+        "subCategory" : "Asia",
+        "played" : 6,
+        "maxScore" : "14/20",
+        "img" : "../../../../assets/img/asia.jpeg"
+    }
+]
